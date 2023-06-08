@@ -90,24 +90,24 @@ $(function () {
   var options_stacked = {
     series: [
       {
-        name: "Marine Sprite",
-        data: [44, 55, 41, 37, 22, 43, 21],
+        name: "Đã ghi",
+        data: [44, 55, 41],
       },
       {
-        name: "Striking Calf",
-        data: [53, 32, 33, 52, 13, 43, 32],
+        name: "Chưa ghi",
+        data: [53, 32, 33],
       },
       {
-        name: "Tank Picture",
-        data: [12, 17, 11, 9, 15, 11, 20],
+        name: "ĐH không sử dụng",
+        data: [12, 17, 11],
       },
       {
-        name: "Bucket Slope",
-        data: [9, 7, 5, 8, 6, 9, 4],
+        name: "Tạm ngừng",
+        data: [9, 7, 5],
       },
       {
-        name: "Reborn Kid",
-        data: [25, 12, 19, 32, 25, 24, 10],
+        name: "Tạm thu",
+        data: [25, 12, 19],
       },
     ],
     chart: {
@@ -133,7 +133,7 @@ $(function () {
       colors: ["#fff"],
     },
     xaxis: {
-      categories: [2008, 2009, 2010, 2011, 2012, 2013, 2014],
+      categories: ["1/2023", "2/2023", "3/2023", "4/2023", "5/2023"],
       labels: {
         formatter: function (val) {
           return val + "K";
@@ -183,7 +183,7 @@ $(function () {
     legend: {
       position: "top",
       horizontalAlign: "left",
-      offsetX: 40,
+      offsetX: 10,
       labels: {
         colors: ["#a1aab2"],
       },
@@ -242,7 +242,7 @@ $(function () {
     },
     plotOptions: {
       bar: {
-        horizontal: true,
+        horizontal: false,
       },
     },
     dataLabels: {

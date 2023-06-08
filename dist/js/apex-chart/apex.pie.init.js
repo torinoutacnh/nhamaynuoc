@@ -7,8 +7,8 @@ $(function () {
       width: 380,
       type: "pie",
     },
-    colors: ["var(--bs-primary)", "var(--bs-secondary)", "#ffae1f", "#fa896b", "#39b69a"],
-    labels: ["Team A", "Team B", "Team C", "Team D", "Team E"],
+    colors: ["var(--bs-primary)", "var(--bs-secondary)", "#ffae1f", "#fa896b", "#39b69a","#39b79a","#39e69a"],
+    labels: ["Không có trạng thái", "Chưa ghi", "Đã ghi", "ĐH cắt", "ĐH không sử dụng","Vắng chủ","Tạm thu","Tạm ngừng"],
     responsive: [{
       breakpoint: 480,
       options: {
@@ -32,6 +32,12 @@ $(function () {
     options_simple
   );
   chart_pie_simple.render();
+
+  var chart_pie_simple2 = new ApexCharts(
+    document.querySelector("#chart-pie-simple2"),
+    options_simple
+  );
+  chart_pie_simple2.render();
 
   // Donut Pie Chart -------> PIE CHART
   var options_donut = {
