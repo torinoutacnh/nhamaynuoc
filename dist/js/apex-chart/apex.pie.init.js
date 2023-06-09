@@ -5,6 +5,7 @@ $(function () {
     chart: {
       fontFamily: '"Nunito Sans", sans-serif',
       width: 380,
+      height:300,
       type: "pie",
     },
     colors: ["var(--bs-primary)", "var(--bs-secondary)", "#ffae1f", "#fa896b", "#39b69a","#39b79a","#39e69a"],
